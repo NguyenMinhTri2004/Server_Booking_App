@@ -1,40 +1,48 @@
 import { ErrorResponseHandle } from "../types";
 
 const StatusCode = {
-   OK : 200,
-   CREATED : 201,
-}
+  OK: 200,
+  CREATED: 201,
+};
 
 const ReasonStatusCode = {
-    CREATED : 'Created',
-    OK : 'Success',
-}
-
+  CREATED: "Created",
+  OK: "Success",
+};
 
 export class SuccessResponse {
-    message: any;
-    status: number;
-    metadata: {};
-    constructor({message , statusCode = StatusCode.OK , reasonStatusCode = ReasonStatusCode.OK , metadata = {}}) {
-        this.message = !message ? reasonStatusCode : message;
-        this.status = statusCode;
-        this.metadata = metadata;
-    }
+  message: any;
+  status: number;
+  metadata: {};
+  constructor({
+    message,
+    statusCode = StatusCode.OK,
+    reasonStatusCode = ReasonStatusCode.OK,
+    metadata = {},
+  }) {
+    this.message = !message ? reasonStatusCode : message;
+    this.status = statusCode;
+    this.metadata = metadata;
+  }
 
-    send(res , headers = {}) {
-        return res.status(this.status).json(this);
-    }
+  send(res, headers = {}) {
+    return res.status(this.status).json(this);
+  }
 }
 
-
 export class OK extends SuccessResponse {
-   constructor({message, metadata}) {
-       super({message, metadata});
-   }
+  constructor({ message, metadata }) {
+    super({ message, metadata });
+  }
 }
 
 export class CREATED extends SuccessResponse {
-    constructor({message, statusCode = StatusCode.CREATED , reasonStatusCode = ReasonStatusCode.CREATED , metadata}) {
-        super({message, metadata , statusCode, reasonStatusCode});
-    }
- }
+  constructor({
+    message,
+    statusCode = StatusCode.CREATED,
+    reasonStatusCode = ReasonStatusCode.CREATED,
+    metadata,
+  }) {
+    super({ message, metadata, statusCode, reasonStatusCode });
+  }
+}

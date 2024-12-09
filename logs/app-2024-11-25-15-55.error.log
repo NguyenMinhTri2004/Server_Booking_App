@@ -1,0 +1,4 @@
+2024-11-25 15:55:22::error::/v1/api/roomType/getAll::5ed24de0-02b9-4f63-bbc2-96e66df660cf::Invalid request - 1ms - Response: 
+  {"status":"Invalid request","now":1732524922247}::{"message":"410"}
+2024-11-25 15:55:34::error::/v1/api/roomType/getAll::13bb9186-e448-44ce-b91b-1d783cb643a1::Invalid request - 1ms - Response: 
+  {"status":"Invalid request","now":1732524934395}::{"message":"410"}

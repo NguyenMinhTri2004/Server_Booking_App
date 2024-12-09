@@ -1,0 +1,1 @@
+2024-11-23 20:20:47::info::/v1/api//order/orderReview::370bd06f-0955-4643-98e4-847f30f73a93::Input params :: POST::::{"userId":"user123","orders":[{"ownerId":"661550683160","codeId":"DISCOUNT10","ownerDiscounts":[{"type":"percentage","value":10}],"orderItems":[{"name":"Item1","price":100},{"name":"Item2","price":200}]}]}

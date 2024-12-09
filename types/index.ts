@@ -1,7 +1,4 @@
 export interface ErrorResponseHandle {
-    value: string;
-    verified: boolean;
+  value: string;
+  verified: boolean;
 }
-
-
-  

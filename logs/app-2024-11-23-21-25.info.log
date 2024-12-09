@@ -1,0 +1,5 @@
+2024-11-23 21:25:28::info::/v1/api/accommodation/getBySlug::9f1ff9ca-f7e3-433a-bfa1-4254c6e1d6ee::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-23 21:25:28::info::/v1/api/roomType/getAll::dd9e1df9-b465-4836-8464-37ceb3b6fcd7::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-23 21:25:35::info::/v1/api/order/orderReview::f9bc4cb1-d770-41bb-a6ac-c42bfb751661::Input params :: POST::::{}
+2024-11-23 21:25:35::error::/v1/api/order/orderReview::c649c2e7-afc5-45a1-bcc7-f118466f5ec8::undefined - NaNms - Response: 
+  {}::{"message":"Cannot destructure property 'userId' of 'data.userId' as it is undefined."}

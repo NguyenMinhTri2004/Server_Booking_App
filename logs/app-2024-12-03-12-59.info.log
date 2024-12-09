@@ -1,0 +1,6 @@
+2024-12-03 12:59:15::info::/v1/api/accommodation/getBySlug::ce7b7ca5-61db-4caf-8591-123b853eb8ee::Input params :: GET::::{"slug":"undefined"}
+2024-12-03 12:59:15::info::/v1/api/roomType/getDetail::cadaf1a7-41ad-4c18-a170-b6e88d5040fc::Input params :: GET::::{}
+2024-12-03 12:59:15::info::/v1/api/order/orderReview::ea3aa727-809c-4add-ae4b-51866fb210f8::Input params :: POST::::{"userId":"661550683160","orders":[{"ownerId":"661550683160","codes":[],"ownerDiscounts":[{"type":"percentage","value":10}],"orderItems":[{"name":"Item1","price":100,"quantity":6}]}]}
+2024-12-03 12:59:15::info::/v1/api/order/orderReview::bed3f3ec-12ed-4da1-b6e5-59e07ecb8412::Input params :: POST::::{"userId":"661550683160","orders":[{"ownerId":"661550683160","codes":[],"ownerDiscounts":[{"type":"percentage","value":10}],"orderItems":[{"name":"Item1","price":100,"quantity":6}]}]}
+2024-12-03 12:59:17::info::/v1/api/accommodation/getAll::6a400a73-290b-4be9-b36a-79f7de47e17f::Input params :: GET::::{}
+2024-12-03 12:59:18::info::/v1/api/accommodation/getAll::22b07f3f-badb-4c30-84ad-af6b622cb4e7::Input params :: GET::::{}

@@ -1,0 +1,3 @@
+2024-11-23 18:54:46::info::/v1/api//order/orderReview::1c6889d2-4133-49df-94be-653210dc74d0::Input params :: POST::::{"userId":"user123","orders":[{"ownerId":"ownerA","codeId":"voucherA","ownerDiscounts":[{"type":"percentage","value":10}],"orderItems":[{"name":"Item1","price":100},{"name":"Item2","price":200}]},{"ownerId":"ownerB","codeId":"voucherB","ownerDiscounts":[{"type":"flat","value":50}],"orderItems":[{"name":"Item3","price":300},{"name":"Item4","price":150}]}]}
+2024-11-23 18:54:46::error::/v1/api//order/orderReview::3b49d188-88df-4a23-ae1e-947c733b91ef::Voucher not exist - 1ms - Response: 
+  {"status":"Voucher not exist","now":1732362886508}::{"message":"404"}

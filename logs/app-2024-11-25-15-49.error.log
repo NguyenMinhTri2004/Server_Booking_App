@@ -1,0 +1,2 @@
+2024-11-25 15:49:23::error::/v1/api/roomType/getAll::c806cdad-467e-42b6-92e0-eae579e9b282::Invalid request - 1ms - Response: 
+  {"status":"Invalid request","now":1732524563570}::{"message":"410"}

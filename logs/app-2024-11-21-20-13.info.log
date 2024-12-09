@@ -1,0 +1,4 @@
+2024-11-21 20:13:06::info::/v1/api/accommodation/getAll::ad936138-b06f-44e7-bd1b-d4719bca4d00::Input params :: GET::::{}
+2024-11-21 20:13:06::info::/v1/api/accommodation/getAll::6d9da056-edcb-4353-b54c-33764c1ed982::Input params :: GET::::{}
+2024-11-21 20:13:11::info::/v1/api/accommodation/getBySlug::d1acb08f-601d-4a49-9cb1-298d05efd85d::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-21 20:13:11::info::/v1/api/roomType/getAll::666c6a51-cb79-46d9-856f-b13a52987a24::Input params :: GET::::{"slug":"tp-vung-tau"}

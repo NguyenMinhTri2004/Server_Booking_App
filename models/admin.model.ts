@@ -1,5 +1,5 @@
-import bcrypt from 'bcryptjs';
-import mongoose from 'mongoose';
+import bcrypt from "bcryptjs";
+import mongoose from "mongoose";
 
 interface admin extends mongoose.Document {
   email: string;
@@ -30,8 +30,8 @@ const AdminSchema = new mongoose.Schema(
     },
     userRole: {
       type: String,
-      enum: ['admin'],
-      default: 'admin',
+      enum: ["admin"],
+      default: "admin",
       require: true,
     },
     status: {
@@ -41,12 +41,12 @@ const AdminSchema = new mongoose.Schema(
     },
   },
   {
-    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-    collection: 'Admin',
+    timestamps: { createdAt: "created_at", updatedAt: "updated_at" },
+    collection: "Admin",
   }
 );
 
-AdminSchema.pre('save', async function (next) {
+AdminSchema.pre("save", async function (next) {
   try {
     // Generate a salt
     const salt = await bcrypt.genSalt(10);
@@ -62,7 +62,9 @@ AdminSchema.pre('save', async function (next) {
   }
 });
 
-AdminSchema.methods.comparePassword = async function (candidatePassword): Promise<boolean> {
+AdminSchema.methods.comparePassword = async function (
+  candidatePassword
+): Promise<boolean> {
   try {
     return await bcrypt.compare(candidatePassword, this.password);
   } catch (error) {
@@ -70,4 +72,4 @@ AdminSchema.methods.comparePassword = async function (candidatePassword): Promis
   }
 };
 
-export default mongoose.model<admin>('Admin', AdminSchema);
+export default mongoose.model<admin>("Admin", AdminSchema);

@@ -1,0 +1,6 @@
+2024-12-03 18:51:33::info::/v1/api/accommodation/getBySlug::417320f3-8078-483a-8036-c9d35a9f614f::Input params :: GET::::{"slug":"undefined"}
+2024-12-03 18:51:33::info::/v1/api/accommodation/getBySlug::73dc7513-be9b-4597-a1bf-cc0c95caea16::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-12-03 18:51:33::info::/v1/api/roomType/getDetail::bc00d12b-c77c-41cb-8caf-807402802992::Input params :: GET::::{}
+2024-12-03 18:51:33::info::/v1/api/roomType/getDetail::bce8bb9b-0a87-4997-bc2b-4c4f97883cfb::Input params :: GET::::{"accommodationSlug":"tp-vung-tau","name":"Deluxe Room"}
+2024-12-03 18:51:33::info::/v1/api/order/orderReview::3c99be91-c1e0-4555-afc8-a99f6ee380f7::Input params :: POST::::{"userId":"661550683160","orders":[{"ownerId":"661550683160","codes":[],"ownerDiscounts":[{"type":"percentage","value":10}],"orderItems":[{"name":"undefined - undefined"}]}]}
+2024-12-03 18:51:33::info::/v1/api/order/orderReview::9c024b7a-9697-4f36-9bc0-662b23d259cc::Input params :: POST::::{"userId":"661550683160","orders":[{"ownerId":"661550683160","codes":[],"ownerDiscounts":[{"type":"percentage","value":10}],"orderItems":[{"name":"TP. Vũng Tàu - Deluxe Room","price":1500000,"quantity":"3"}]}]}

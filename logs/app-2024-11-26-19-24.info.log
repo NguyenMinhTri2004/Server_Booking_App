@@ -1,0 +1,7 @@
+2024-11-26 19:24:20::info::/v1/api/accommodation/getAll::4cc7b5d6-5cf9-4a53-b655-bc61f30debf0::Input params :: GET::::{}
+2024-11-26 19:24:21::info::/v1/api/accommodation/getAll::a99b8eef-a72d-44da-bc16-9896f85d10b9::Input params :: GET::::{}
+2024-11-26 19:24:25::info::/v1/api/accommodation/getBySlug::770eba5f-fb3f-4dc8-ac4c-b6e41761195f::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-26 19:24:25::info::/v1/api/roomType/get::8463aa75-034f-4ca7-962b-f902c1c718e4::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-26 19:24:36::info::/v1/api/accommodation/getBySlug::9b6c2f2d-0678-42be-9062-b2328b907af6::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-26 19:24:36::info::/v1/api/roomType/getDetail::80d1d669-1342-40c3-827e-55b7a26a576f::Input params :: GET::::{"accommodationSlug":"tp-vung-tau","name":"Deluxe Room"}
+2024-11-26 19:24:36::info::/v1/api/order/orderReview::a19d5254-351d-4d2d-aaea-49eec5235269::Input params :: POST::::{"userId":"661550683160","orders":[{"codes":[],"ownerDiscounts":[{"type":"percentage","value":10}],"orderItems":[{"name":"Item1","price":100,"quantity":6}]}]}

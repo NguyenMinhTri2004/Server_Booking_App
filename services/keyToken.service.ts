@@ -2,65 +2,76 @@ import keytokenModel from "../models/keytoken.model";
 import { Types } from "mongoose";
 
 class KeyToKenService {
-    
-    static createKeyToken = async ({userId , publicKey , privateKey , refreshToken}) => {
-        try {
-            // const tokens = keytokenModel.create({
-            //     user : userId,
-            //     publicKey,
-            //     privateKey
-            // })
+  static createKeyToken = async ({
+    userId,
+    publicKey,
+    privateKey,
+    refreshToken = null,
+  }) => {
+    try {
+      // const tokens = keytokenModel.create({
+      //     user : userId,
+      //     publicKey,
+      //     privateKey
+      // })
 
-            // let publicKeyFromData = ""
+      // let publicKeyFromData = ""
 
-            // await tokens.then(function(result) {
-            //     publicKeyFromData =  result.publicKey
-            // })
+      // await tokens.then(function(result) {
+      //     publicKeyFromData =  result.publicKey
+      // })
 
-            // return publicKeyFromData
+      // return publicKeyFromData
 
-            const filter = {user : userId}, update = {
-                publicKey,
-                privateKey,
-                refreshTokenUsed : [],
-                refreshToken
-            },options = {upsert : true , new : true}
-            
+      const filter = { userId: userId },
+        update = {
+          publicKey,
+          privateKey,
+          refreshTokenUsed: [],
+          refreshToken,
+        },
+        options = { upsert: true, new: true };
 
-            const tokens = await keytokenModel.findOneAndUpdate(filter,update,options)
+      const tokens = await keytokenModel.findOneAndUpdate(
+        filter,
+        update,
+        options
+      );
 
-            return tokens ? tokens.publicKey : null
-                
-        }catch (e) {
-            console.log(e);
-        }
-    }  
-
-    static findByUserId = async (userId) => {
-        let keyStoreDb = await keytokenModel.findOne({user: userId}).lean()
-        console.log('keyStoreDb', keyStoreDb)
-        return keyStoreDb
+      return tokens ? tokens.publicKey : null;
+    } catch (e) {
+      console.log(e);
     }
+  };
 
-    static removeKeyById = async (id) => {
-        const result = await keytokenModel.deleteOne({
-            _id:  new Types.ObjectId(id)
-        }).lean()
-        return result;
-    }
+  static findByUserId = async (userId) => {
+    let keyStoreDb = await keytokenModel.findOne({ userId: userId }).lean();
+    console.log("keyStoreDb", keyStoreDb);
+    return keyStoreDb;
+  };
 
-    static findByRefreshTokenUsed = async (refreshToken) => {
-        return await keytokenModel.findOne({ refreshTokensUsed: refreshToken}).lean()
-    }
+  static removeKeyById = async (id) => {
+    const result = await keytokenModel
+      .deleteOne({
+        _id: new Types.ObjectId(id),
+      })
+      .lean();
+    return result;
+  };
 
-    static findByRefreshToken = async (refreshToken) => {
-        return await keytokenModel.findOne({refreshToken}).lean()
-    }
+  static findByRefreshTokenUsed = async (refreshToken) => {
+    return await keytokenModel
+      .findOne({ refreshTokensUsed: refreshToken })
+      .lean();
+  };
 
-    static deleteKeyById = async (useId) => {
-        return await keytokenModel.findByIdAndDelete({user: useId}).lean()
-    }
+  static findByRefreshToken = async (refreshToken) => {
+    return await keytokenModel.findOne({ refreshToken }).lean();
+  };
 
+  static deleteKeyById = async (useId) => {
+    return await keytokenModel.findByIdAndDelete({ userId: useId }).lean();
+  };
 }
 
 export default KeyToKenService;

@@ -1,0 +1,4 @@
+2024-12-03 14:08:02::info::/v1/api/accommodation/getBySlug::2a02a2ef-15de-4e35-b1c3-ec916458570f::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-12-03 14:08:02::info::/v1/api/roomType/getDetail::917f364b-e0ec-45c5-8776-d73469176ebd::Input params :: GET::::{"accommodationSlug":"tp-vung-tau","name":"Deluxe Room"}
+2024-12-03 14:08:02::info::/v1/api/order/orderReview::9eb3d77c-f83c-4e5e-b23e-59073dfcbb9b::Input params :: POST::::{"userId":"661550683160","orders":[{"ownerId":"661550683160","codes":[],"ownerDiscounts":[{"type":"percentage","value":10}],"orderItems":[{"name":"Item1","price":100,"quantity":6}]}]}
+2024-12-03 14:08:04::info::/v1/api/order/orderByUser::e198f62a-3b08-4577-a989-64f04094ecc7::Input params :: POST::::{"amount":100000,"orderInfo":"Payment for Order #123","returnUrl":"http://localhost:3000/payment-success","ipAddr":"127.0.0.1","bankCode":"9704198526191432198"}

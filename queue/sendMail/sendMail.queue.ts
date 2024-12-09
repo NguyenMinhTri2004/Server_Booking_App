@@ -1,9 +1,9 @@
-import kue from 'kue';
+import kue from "kue";
 
 const sendMailQueue = kue.createQueue({
   // prefix: 'breaths-queue',
   redis: {
-    host: 'localhost',
+    host: "localhost",
     port: 6379,
   },
 });

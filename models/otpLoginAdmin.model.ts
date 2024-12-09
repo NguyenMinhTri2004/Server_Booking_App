@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
@@ -22,9 +22,9 @@ const otpLoginAdminSchema = new Schema(
     },
   },
   {
-    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-    collection: 'OTPLoginAdmin',
+    timestamps: { createdAt: "created_at", updatedAt: "updated_at" },
+    collection: "OTPLoginAdmin",
   }
 );
 
-export default mongoose.model('OTPLoginAdmin', otpLoginAdminSchema);
+export default mongoose.model("OTPLoginAdmin", otpLoginAdminSchema);

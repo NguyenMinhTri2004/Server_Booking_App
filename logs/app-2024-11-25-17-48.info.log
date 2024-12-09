@@ -1,0 +1,6 @@
+2024-11-25 17:48:06::info::/v1/api/accommodation/getAll::64879963-3258-4cef-980a-43093763bc24::Input params :: GET::::{}
+2024-11-25 17:48:07::info::/v1/api/accommodation/getAll::cc37c40e-bb27-4026-bd0d-234c966b43b5::Input params :: GET::::{}
+2024-11-25 17:48:18::info::/v1/api/accommodation/getBySlug::6557f949-66b3-489a-aea5-853dfc62a9f6::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-25 17:48:18::info::/v1/api/roomType/get::beeba52c-4d51-4cec-8bc2-a62c193ccba0::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-25 17:48:27::info::/v1/api/accommodation/getBySlug::943a9cda-7fe7-453b-809e-2b1265e4ac67::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-25 17:48:27::info::/v1/api/roomType/getDetail::28af7151-4496-45f5-a029-ef08692a25df::Input params :: GET::::{"accommodationSlug":"tp-vung-tau","name":"Deluxe Room"}

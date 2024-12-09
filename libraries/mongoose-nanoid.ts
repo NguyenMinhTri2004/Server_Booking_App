@@ -1,6 +1,6 @@
-import type { Schema } from 'mongoose';
-import { urlAlphabet } from 'nanoid';
-import { customAlphabet } from 'nanoid/async';
+import type { Schema } from "mongoose";
+import { urlAlphabet } from "nanoid";
+import { customAlphabet } from "nanoid/async";
 
 export type { Options };
 
@@ -13,19 +13,23 @@ type Options = {
 };
 
 export default function plugin(schema: Schema, opts: Options = {}) {
-  const fieldName = opts.fieldName || '_id';
+  const fieldName = opts.fieldName || "_id";
   const attemps = opts.attemps || 3;
-  const attempsErrorMessage = opts.attempsErrorMessage || 'Failed to generate the ID.';
-  const generateId = customAlphabet(opts.charset || urlAlphabet, opts.length || 21);
+  const attempsErrorMessage =
+    opts.attempsErrorMessage || "Failed to generate the ID.";
+  const generateId = customAlphabet(
+    opts.charset || urlAlphabet,
+    opts.length || 21
+  );
 
   schema.add({
     [fieldName]: {
       type: String,
-      default: '',
+      default: "",
     },
   });
 
-  schema.pre('save', async function () {
+  schema.pre("save", async function () {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     if (this.isNew && !this.constructor.$isArraySubdocument) {
@@ -52,7 +56,7 @@ export default function plugin(schema: Schema, opts: Options = {}) {
     }
   });
 
-  schema.pre('insertMany', async function (next, docs) {
+  schema.pre("insertMany", async function (next, docs) {
     if (Array.isArray(docs) && docs.length) {
       for (let i = 0; i < docs.length; i++) {
         let newId: string;
@@ -75,7 +79,7 @@ export default function plugin(schema: Schema, opts: Options = {}) {
       }
       next();
     } else {
-      return next(new Error('List should not be empty'));
+      return next(new Error("List should not be empty"));
     }
   });
 }

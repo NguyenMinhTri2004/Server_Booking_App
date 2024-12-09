@@ -1,0 +1,12 @@
+2024-11-25 15:04:12::info::/v1/api/order/orderReview::b7bc07ce-7106-4c7c-b0f9-44b51a7a3e07::Input params :: POST::::{}
+2024-11-25 15:04:12::error::/v1/api/order/orderReview::8f13381a-4223-4aef-996e-037cdae2508e::undefined - NaNms - Response: 
+  {}::{"message":"Cannot destructure property 'userId' of 'data.userId' as it is undefined."}
+2024-11-25 15:04:12::info::/v1/api/accommodation/getBySlug::c0b3420f-d979-4d1d-9695-f357707f7a82::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-25 15:04:15::info::/v1/api/order/orderReview::a6209490-bbd5-470b-b83b-a0e1e4397d20::Input params :: POST::::{}
+2024-11-25 15:04:15::error::/v1/api/order/orderReview::196cecf6-e599-4080-85e0-d5b5a014d87d::undefined - NaNms - Response: 
+  {}::{"message":"Cannot destructure property 'userId' of 'data.userId' as it is undefined."}
+2024-11-25 15:04:15::info::/v1/api/accommodation/getBySlug::0148f0d9-f119-4691-8f46-8d33f68cf86b::Input params :: GET::::{"slug":"tp-vung-tau"}
+2024-11-25 15:04:25::info::/v1/api/order/orderReview::02427d7b-4e40-4694-bbe9-d5f4fe6e4b8e::Input params :: POST::::{}
+2024-11-25 15:04:25::error::/v1/api/order/orderReview::b95dee0b-9fea-4b8c-8830-a4756c7c8c93::undefined - NaNms - Response: 
+  {}::{"message":"Cannot destructure property 'userId' of 'data.userId' as it is undefined."}
+2024-11-25 15:04:25::info::/v1/api/accommodation/getBySlug::161f5a6e-79b2-454a-a39c-007227195bec::Input params :: GET::::{"slug":"tp-vung-tau"}

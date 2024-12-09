@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
@@ -30,9 +30,9 @@ const fileSchema = new Schema(
     },
   },
   {
-    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-    collection: 'File',
+    timestamps: { createdAt: "created_at", updatedAt: "updated_at" },
+    collection: "File",
   }
 );
 
-export default mongoose.model('File', fileSchema);
+export default mongoose.model("File", fileSchema);

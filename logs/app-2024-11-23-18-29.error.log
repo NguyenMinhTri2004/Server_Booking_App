@@ -1,0 +1,2 @@
+2024-11-23 18:29:06::error::/v1/api/accommodation/getAll::62269116-4b39-4636-bfe4-d4387549d001::Invalid request - 1ms - Response: 
+  {"status":"Invalid request","now":1732361346597}::{"message":"410"}

@@ -1,4 +1,4 @@
-import otpChangePassword from '../models/otpChangePassword.model';
+import otpChangePassword from "../models/otpChangePassword.model";
 
 export default class OTPChangePasswordService {
   Create = async (data) => {
@@ -46,7 +46,7 @@ export default class OTPChangePasswordService {
         $set: { ...dataUpdate },
       },
       {
-        returnDocument: 'after',
+        returnDocument: "after",
       }
     );
 
@@ -61,11 +61,11 @@ export default class OTPChangePasswordService {
           $set: { ...dataUpdate },
         },
         {
-          returnDocument: 'after',
+          returnDocument: "after",
           upsert: true,
         }
       )
-      .select('-password');
+      .select("-password");
 
     return otpUpdated;
   };
